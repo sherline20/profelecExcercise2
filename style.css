@@ -1,0 +1,258 @@
+body{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+.header-fix{
+    height: 85px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,.75);
+} 
+.header-container{
+    width: 1024px;
+    margin: auto;
+}
+.container{
+    width: 1024px;
+    margin: 84px auto 10px;
+    border-radius: 5px round;
+    border: 1px solid #bbbbbb;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+aside{
+    float: right;
+    width: 25%;
+    margin-left: 1%;
+    margin-right: 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    background-color: white;
+}
+aside h3{
+    margin-bottom: 0;
+}
+aside ul{
+    margin-top: 10px;
+}
+article{
+    text-align: justify;
+}
+.second, .third{
+    margin-top: 10%;
+}
+
+/*table2*/
+.withStyle{
+    width: 71%;
+    border-collapse: collapse;
+    border: 2px solid #597aed;
+    background-color: #3d4bff;
+    font-family: 'Shadows Into Light', cursive;
+}
+table.withStyle thead th:nth-child(1){
+    width: 35%;
+}
+table.withStyle thead th:nth-child(2),table.withStyle thead th:nth-child(3){
+    width: 20%;
+}
+table.withStyle thead th:nth-child(4){
+    width: 25%;
+}
+table.withStyle thead tr, table.withStyle tfoot tr{
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+    background-image: url('bg-table.jpg');
+}
+table.withStyle tbody tr:nth-child(odd){
+    background-color: #9ca2ce;
+}
+table.withStyle tbody tr:nth-child(even){
+    background-color: #7d87e6;
+}
+table.withStyle tbody th{
+    color: #f2f1ec;
+    font-size: 1.2em;
+}
+table.withStyle caption{
+    font-size: 1.5em;
+    padding: 20px;
+    caption-side: bottom;
+    color: #0041c3;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+/*third table*/
+#datatable-container {
+    width: 71%;
+  }
+  
+  #datatable-header {
+    width: 100%;
+    justify-content: space-between;
+    
+    margin-bottom: 5px;
+  }
+  
+  #datatable-header-search {
+    display: inline-flex;
+    float: right;
+  }
+  
+  #datatable-container table {
+    width: 100%;
+    background-color: #ccc;
+    border: 1px solid #bbb;
+    border-collapse: collapse;
+
+  }
+  
+  #datatable-container table thead th {
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: 5px;
+    text-align: center;
+    color: #2b2b2b;
+    background-color: #ccc;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+  }
+  
+  #datatable-container thead .sort-asc {
+    background-image: url("images/sort_asc.png");
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+  
+  #datatable-container thead .no-sort {
+    background-image: url("images/sort_both.png");
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+  
+  #datatable-container table caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 5px;
+    
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #0041c3;
+    background-color: #ccc;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+  }
+
+  #frameworkTable th:first-child, tbody td:first-child {
+    font-weight: bold;
+  }
+  
+  #datatable-container table tbody tr {
+    text-align: center;
+  }
+  
+  #datatable-container table tbody td {
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  #datatable-container table tbody tr:nth-child(odd) {
+    background-color: #ddd;
+  }
+  
+  #datatable-container table tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+  
+  #datatable-container table tfoot td {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  #datatable-container table tfoot th {
+    text-align: right;
+    border-right: 1px solid #bbb;
+    margin-right: 10px;
+  }
+  
+  #datatable-container table tfoot td {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  #datatable-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  #datatable-footer-results {
+    margin-top: 20px;
+  }
+  
+  #datatable-footer-paginator {
+    display: inline-flex;
+  }
+  
+  .pagination {
+    display: flex;
+    margin-top: 15px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin: 0.3rem 0.6rem;
+    text-decoration: none;
+    border: 1px solid #dee2e6;
+    color: #0041c3;
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.pagination a:first-child {
+    margin-left: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.pagination a.disabled {
+    color: #bbb;
+}
+
+.pagination a.active {
+    color: white;
+    background-color: #0041c3;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

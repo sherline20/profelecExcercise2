@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Formatting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--header-->
+    <header class="header-fix">
+        <div class="header-container">
+            <h1><i class="fa fa-table"></i>Formatting a Table</h1>
+        </div>
+    </header>
+    <div class="container">
+        <!--first section-->
+        <section class="first">
+            <!--aside-->
+            <aside class="aside">
+                <h2>HTML Structure</h2>
+                <h3>Tags</h3>
+                <ul>
+                    <li><strong>table</strong>: table</li>
+                    <li><strong>table</strong>: table title</li>
+                    <li><strong>thead</strong>: Table header</li>
+                    <li><strong>tbody</strong>: Table content</li>
+                    <li><strong>tr</strong>: Row of a table</li>
+                    <li><strong>th</strong>: Title of cell of a table</li>
+                    <li><strong>td</strong>: Cell of a table</li>
+                </ul>
+                <h3>Attributes</h3>
+                <ul>
+                    <li><strong>colspan</strong>: defines the number of columns to be mergerd</li>
+                    <li><strong>rowspan</strong>: defines the number of rows to be merged</li>
+                    <li><strong>scope</strong>: defines the td celss to which the th cell in linked (row/col)</li>
+                </ul>
+            </aside>
+            <!--article-->
+            <article>
+
+                <h2>Unstyled HTML Table</h2>
+                <p>Let's start by creating a table that will list a data set, for example.<br> No CSS style is applied:
+                </p>
+
+
+                <!--table-->
+                <table>
+                    <caption>
+                        Presentation of the various PHP Frameworks
+                    </caption>
+                    <thead>
+                        <th>Framework</th>
+                        <th>Year of creation</th>
+                        <th>Creator</th>
+                        <th>Github Stars</th>
+                    </thead>
+                    <tbody>
+                        <th>Symfony</th>
+                        <td>2005</td>
+                        <td>SensioLabs</td>
+                        <td>23.1k</td>
+                        </tr>
+                        <tr>
+                            <th>Laravel</th>
+                            <td>2011</td>
+                            <td>Taylor Otwell</td>
+                            <td>58.8k</td>
+                        </tr>
+                        <tr>
+                            <th>Codelgniter</th>
+                            <td>2006</td>
+                            <td>Rick Ellis</td>
+                            <td>18k</td>
+                        </tr>
+                        <tr>
+                            <th>Zend Framework</th>
+                            <td>2006</td>
+                            <td>Zend Technologies</td>
+                            <td>5.7k</td>
+                        </tr>
+                        <tr>
+                            <th>Yii</th>
+                            <td>2008</td>
+                            <td>Qiang Xu</td>
+                            <td>4.8k</td>
+                        </tr>
+                        <tr>
+                            <th>CakePHP</th>
+                            <td>2005</td>
+                            <td>Cake Software Foundation</td>
+                            <td>8.1k</td>
+                        </tr>
+                        <tr>
+                            <th>FuelPHP</th>
+                            <td>2011</td>
+                            <td>Fuel PHP dev team</td>
+                            <td>>1k</td>
+                        </tr>
+                        <tr>
+                            <th>Phalcon</th>
+                            <td>2012</td>
+                            <td>Andres Gutierrez</td>
+                            <td>10.1k</td>
+                        </tr>
+                        <tr>
+                            <th>Slim PHP</th>
+                            <td>-</td>
+                            <td>Slim Framework Team</td>
+                            <td>10.6</td>
+                        </tr>
+                        <tr>
+                            <th>PEAR</th>
+                            <td>1999</td>
+                            <td>Stig S. Bakken</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="3">Total stars</th>
+                            <td>>100k</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </article>
+        </section>
+        <!--end of first section-->
+
+        <!--second section-->
+        <section class="second">
+            <aside class="aside">
+                <h2><i class="fa fa-question"></i>CSS Styles</h2>
+                <ul>
+                    <li>table-layout</li>
+                    <li>border-collaps</li>
+                    <li>caption-side</li>
+                    <li>border</li>
+                    <li>background-color</li>
+                    <li>background-image</li>
+                    <li>width</li>
+                    <li>color</li>
+                    <li>text-align</li>
+                    <li>font-size</li>
+                    <li>...</li>
+                </ul>
+            </aside>
+            <article>
+                <h2>Stylized HTML Table</h2>
+                <p>The same HTML table with a CSS style this time to define the column widths, background colors, font,
+                    etc.:</p>
+                <table class="withStyle">
+                    <caption>
+                        Presentation of the various PHP Frameworks
+                    </caption>
+                    <thead>
+                        <th>Framework</th>
+                        <th>Year of creation</th>
+                        <th>Creator</th>
+                        <th>Github Stars</th>
+                    </thead>
+                    <tbody>
+                        <th>Symfony</th>
+                        <td>2005</td>
+                        <td>SensioLabs</td>
+                        <td>23.1k</td>
+                        </tr>
+                        <tr>
+                            <th>Laravel</th>
+                            <td>2011</td>
+                            <td>Taylor Otwell</td>
+                            <td>58.8k</td>
+                        </tr>
+                        <tr>
+                            <th>Codelgniter</th>
+                            <td>2006</td>
+                            <td>Rick Ellis</td>
+                            <td>18k</td>
+                        </tr>
+                        <tr>
+                            <th>Zend Framework</th>
+                            <td>2006</td>
+                            <td>Zend Technologies</td>
+                            <td>5.7k</td>
+                        </tr>
+                        <tr>
+                            <th>Yii</th>
+                            <td>2008</td>
+                            <td>Qiang Xu</td>
+                            <td>4.8k</td>
+                        </tr>
+                        <tr>
+                            <th>CakePHP</th>
+                            <td>2005</td>
+                            <td>Cake Software Foundation</td>
+                            <td>8.1k</td>
+                        </tr>
+                        <tr>
+                            <th>FuelPHP</th>
+                            <td>2011</td>
+                            <td>Fuel PHP dev team</td>
+                            <td>>1k</td>
+                        </tr>
+                        <tr>
+                            <th>Phalcon</th>
+                            <td>2012</td>
+                            <td>Andres Gutierrez</td>
+                            <td>10.1k</td>
+                        </tr>
+                        <tr>
+                            <th>Slim PHP</th>
+                            <td>-</td>
+                            <td>Slim Framework Team</td>
+                            <td>10.6</td>
+                        </tr>
+                        <tr>
+                            <th>PEAR</th>
+                            <td>1999</td>
+                            <td>Stig S. Bakken</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="3">Total stars</th>
+                            <td>>100k</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </article>
+
+
+            </article>
+        </section>
+        <!--end of second section-->
+
+        <!--third section-->
+        <section class="third">
+            <aside class="aside">
+                <h2><i class="fa fa-question"></i>Features</h2>
+                <ul>
+                    <li>search engine</li>
+                    <li>pagination</li>
+                    <li>sort by column</li>
+                    <li>filter by column</li>
+                    <li>order by column</li>
+                    <li>...</li>
+                </ul>
+            </aside>
+            <article>
+                <h2>HTML Table/ Advanced CSS</h2>
+                <p>Here is an HTML/CSS table widely used in Web application to present a collection of data:
+                    <strong>Datatable</strong><br>The possible actions are to be encoded in JavaScript (not implemented
+                    in this example) and make it possible to <strong>filter</strong>,
+                    <strong>order</strong>,<strong>search</strong> in a large data collection
+                </p>
+                <div id="datatable-container">
+                    <div id="datatable-header">
+                        <label for="display">Lines displayed</label>
+                        <select name="line" id="display" onchange="filterTable1()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10" selected>10</option>
+                        </select>
+                        <div id="datatable-header-search">
+                            <input type="search" placeholder="Search" id="searchInput" oninput="filterTable()">
+                        </div>
+                        <caption></caption>
+                        <table id="frameworkTable">
+                            <caption>
+                                Presentation of the various PHP Frameworks
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th class="sort-asc">Framework</th>
+                                    <th class="no-sort">Year of creation</th>
+                                    <th class="no-sort">Creator</th>
+                                    <th class="no-sort">Github Stars</th>
+                                </tr>
+                                <tr>
+                                    <th><input type="search" name="searchBox1" id="searchBox1" oninput="filterTable2()"
+                                            placeholder="Framework name"></th>
+                                    <th><select name="dropdownyear" id="yearFilter" onchange="filterTable2()">
+                                        <option value="">All</option>
+                                            <option value="1999">1999</option>
+                                            <option value="2005">2005</option>
+                                            <option value="2006">2006</option>
+                                            <option value="2008">2008</option>
+                                            <option value="2011">2011</option>
+                                            <option value="2012">2012</option>
+                                            <option value="1999">1999</option>
+                                            <option value="-">-</option>
+                                        </select></th>
+                                    <th><input type="search" name="searchBox2" id="searchBox2" oninput="filterTable2()" placeholder="Framework creator">
+                                    </th>
+                                    <th><select name="dropdownstars" id="starFilter" onchange="filterTable2()">
+                                            <option value="">All</option>
+                                            <option value="&gt;1k">&gt;1k</option>
+                                            <option value="&lt;10k">&lt;10k</option>
+                                            <option value="&gt;10k">&gt;10k</option>
+                                            <option value="-">-</option>
+                                        </select></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Symfony</td>
+                                    <td>2005</td>
+                                    <td>SensioLabs</td>
+                                    <td>23.1k</td>
+                                </tr>
+                                <tr>
+                                    <td>Laravel</td>
+                                    <td>2011</td>
+                                    <td>Taylor Otwell</td>
+                                    <td>58.8k</td>
+                                </tr>
+                                <tr>
+                                    <td>Codelnighter</td>
+                                    <td>2006</td>
+                                    <td>Rick Ellis</td>
+                                    <td>18k</td>
+                                </tr>
+                                <tr>
+                                    <td>Zend Framework</td>
+                                    <td>2006</td>
+                                    <td>Zend Technologies</td>
+                                    <td>5.7k</td>
+                                </tr>
+                                <tr>
+                                    <td>Yii</td>
+                                    <td>2008</td>
+                                    <td>Qiang Xu</td>
+                                    <td>4.8k</td>
+                                </tr>
+                                <tr>
+                                    <td>CakePHP</td>
+                                    <td>2005</td>
+                                    <td>Cake Software Foundation</td>
+                                    <td>8.1k</td>
+                                </tr>
+                                <tr>
+                                    <td>FuelPHP</td>
+                                    <td>2011</td>
+                                    <td>Fuel PHP dev team</td>
+                                    <td>>1k</td>
+                                </tr>
+                                <tr>
+                                    <td>Phalcon</td>
+                                    <td>2012</td>
+                                    <td>Andres Gutierrez</td>
+                                    <td>10.1k</td>
+                                </tr>
+                                <tr>
+                                    <td>Slim PHP</td>
+                                    <td>-</td>
+                                    <td>Slim Framework Team</td>
+                                    <td>10.6</td>
+                                </tr>
+                                <tr>
+                                    <td>PEAR</td>
+                                    <td>1999</td>
+                                    <td>Stig S. Bakken</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <th>Total stars</th>
+                                    <td>>100k</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div id="datatable-footer">
+                    <div id="datatable-footer-results">
+                        <p>Total: <strong id="output">150 rows</strong></p>
+                    </div>
+                    <div id="datatable-footer-paginator">
+                        <div class="pagination" id="pagination"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--end of third section-->
+
+    </div>
+
+    <script src="pagination.js"></script>
+    <script>
+        
+        function filterTable() {
+            // Declare variables
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("frameworkTable");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those that don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td");
+                for (var j = 0; j < td.length; j++) {
+                    if (td[j]) {
+                        txtValue = td[j].textContent || td[j].innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                            break;
+                        } else {
+                            tr[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+            
+        }
+        table = document.getElementById("frameworkTable");
+        tr = table.getElementsByTagName("tr");
+        var tablerows = tr.length;
+        print = document.getElementById("output");
+        
+
+
+        function filterTable2() {
+                // Declare variables
+                var input1, input2, select, filter1, filter2, yearFilter, starFilter, table, tr, td, i, txtValue;
+                input1 = document.getElementById("searchBox1");
+                input2 = document.getElementById("searchBox2");
+                select = document.getElementById("yearFilter");
+                filter1 = input1.value.toUpperCase();
+                filter2 = input2.value.toUpperCase();
+                yearFilter = select.value.toUpperCase();
+                starFilter = select.value.toUpperCase();
+                table = document.getElementById("frameworkTable");
+                tr = table.getElementsByTagName("tr");
+
+                // Loop through all table rows, and hide/show based on the search criteria
+                for (i = 2; i < tr.length; i++) {  // Start from 2 to skip the two header rows
+                    td = tr[i].getElementsByTagName("td");
+                    if (td.length > 0 &&  // Check if there are td elements in the row
+                        (td[0].textContent.toUpperCase().indexOf(filter1) > -1) &&
+                        (td[1] && (yearFilter === '' || td[1].textContent.toUpperCase().indexOf(yearFilter) > -1)) &&
+                        (td[2].textContent.toUpperCase().indexOf(filter2) > -1) &&
+                        (td[3] && (starFilter === '' || td[1].textContent.toUpperCase().indexOf(starFilter) > -1))
+                        ) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+                
+ 
+            }
+    </script>
+</body>
+
+</html>
